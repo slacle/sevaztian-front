@@ -5,7 +5,7 @@ import Song from "./components/Song";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <>
         <Link to="/">
           <img src="/sevaztian.png" alt="sevaztian" />
         </Link>
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/:song" element={<Song />} />
         </Routes>
-      </div>
+      </>
     </Router>
   );
 }

@@ -1,4 +1,6 @@
 const Home = () => {
+  document.title = "sevaztian";
+
   return (
     <>
       <p>You may listen to my songs at...</p>

@@ -1,13 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Song from "./components/Song";
+
 function App() {
   return (
-    <div className="App">
-      <h1>sevaztian</h1>
-      <p>
-        <a href="https://soundcloud.com/sevaztian">
-          https://soundcloud.com/sevaztian
-        </a>
-      </p>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/:song" element={<Song />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
